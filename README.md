@@ -103,7 +103,7 @@ This Power BI dashboard transforms raw customer data into meaningful insights.
 By identifying churn drivers, businesses can take preventive actions to reduce customer loss and improve profitability.
 
 📷 Dashboard Preview
+<img width="1153" height="749" alt="image" src="https://github.com/user-attachments/assets/53a49228-c388-482a-86ad-caa0bd60cbce" />
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
 
