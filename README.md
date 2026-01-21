@@ -72,57 +72,6 @@ PyCharm
 
 Git & GitHub
 
-📁 Project Structure
-
-Telco_Customer_Churn_Project/
-│
-├── main.py
-├── app.py
-├── model.pkl
-├── save_model.py
-│
-├── src/
-│   ├── missing_values.py
-│   ├── encoding.py
-│   ├── transformation.py
-│   ├── outliers.py
-│   ├── feature_selection.py
-│   ├── model_training.py
-│
-├── templates/
-│   └── index.html
-│
-├── static/
-│   ├── css/style.css
-│   └── images/
-│       ├── jio.png
-│       ├── airtel.png
-│       ├── vi.png
-│       └── bsnl.png
-│
-├── WA_Fn-UseC_-Telco-Customer-Churn.csv
-└── README.md
-
-🔄 Project Workflow
-
-Data Loading
-   ↓
-Missing Value Handling
-   ↓
-Categorical Encoding
-   ↓
-Feature Engineering
-   ↓
-Train-Test Split
-   ↓
-Model Training (Random Forest)
-   ↓
-Model Evaluation
-   ↓
-Model Saving
-   ↓
-Flask Deployment
-
 🧹 Data Preprocessing
 
 Handled missing values using median (numerical) and mode (categorical)
