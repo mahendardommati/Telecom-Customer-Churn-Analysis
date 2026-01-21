@@ -153,16 +153,6 @@ Open browser:
 
 http://127.0.0.1:5000/
 
-📌 Future Enhancements
-
-Add XGBoost model
-
-Improve feature selection
-
-Add confidence score in predictions
-
-Deploy on cloud (AWS / Render / Heroku)
-
 # 📌 Conclusion
 
 This Power BI dashboard transforms raw customer data into meaningful insights.
