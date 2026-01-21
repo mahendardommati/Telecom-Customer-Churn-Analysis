@@ -4,16 +4,31 @@
 
 # 📌 Project Overview
 
-Customer churn is a major challenge in the telecom industry.
-This project analyzes customer churn data using Power BI to identify key factors influencing customer retention and provide actionable business insights.
+Customer churn is a major challenge in the telecom industry. This project focuses on analyzing customer churn data and predicting churn using Machine Learning, along with business insights through Power BI dashboards.
+
+The project is implemented end-to-end, covering:
+
+Data preprocessing
+
+Feature engineering
+
+Model training & evaluation
+
+Web deployment using Flask
+
+Business analysis using Power BI
 
 # 🎯 Objective
 
-   Understand customer churn patterns
+Understand customer churn behavior
 
-   Identify high-risk customer segments
+Identify high-risk customer segments
 
-   Provide insights to help reduce churn
+Build a churn prediction ML model
+
+Deploy the model with a web dashboard
+
+Provide actionable business recommendations
 
 # 🗂 Dataset Information
 
@@ -29,76 +44,173 @@ This project analyzes customer churn data using Power BI to identify key factors
 
 # 🛠 Tools & Technologies Used
 
-   Power BI Desktop
+🔹 Programming & ML
 
-   DAX (Data Analysis Expressions)
+Python
 
-   Data Visualization & Dashboarding
+Pandas, NumPy
 
-# 🔄 Data Preparation
+Scikit-learn
 
-   Verified data types and column formats
+Random Forest Classifier
 
-   Handled missing values
+🔹 Web & Deployment
 
-   Created calculated measures for KPIs
+Flask
 
- Applied filters and aggregations for analysis
+HTML, CSS
 
-# 📈 Dashboard Description
-   🔹 KPI Cards
+🔹 Visualization & BI
 
-     Total Customers: 7,043
+Power BI
 
-     Churned Customers: 1,869
+DAX
 
-     Average Monthly Charges: 64.76
+🔹 Development Environment
 
-These KPIs provide a quick summary of customer base and churn impact.
+PyCharm
 
-🔹 Visual Analysis
+Git & GitHub
 
-1. Customer Churn Distribution
+📁 Project Structure
+Telco_Customer_Churn_Project/
+│
+├── main.py
+├── app.py
+├── model.pkl
+├── save_model.py
+│
+├── src/
+│   ├── missing_values.py
+│   ├── encoding.py
+│   ├── transformation.py
+│   ├── outliers.py
+│   ├── feature_selection.py
+│   ├── model_training.py
+│
+├── templates/
+│   └── index.html
+│
+├── static/
+│   ├── css/style.css
+│   └── images/
+│       ├── jio.png
+│       ├── airtel.png
+│       ├── vi.png
+│       └── bsnl.png
+│
+├── WA_Fn-UseC_-Telco-Customer-Churn.csv
+└── README.md
 
-   Shows percentage of churned vs retained customers
+🔄 Project Workflow
+Data Loading
+   ↓
+Missing Value Handling
+   ↓
+Categorical Encoding
+   ↓
+Feature Engineering
+   ↓
+Train-Test Split
+   ↓
+Model Training (Random Forest)
+   ↓
+Model Evaluation
+   ↓
+Model Saving
+   ↓
+Flask Deployment
 
-   Around 26.54% customers have churned
+🧹 Data Preprocessing
 
-2. Churn by Contract Type
+Handled missing values using median (numerical) and mode (categorical)
 
-   Month-to-month customers show the highest churn
+Encoded categorical features using Label Encoding
 
-   Two-year contract customers show lowest churn
+Managed outliers using statistical techniques
 
-3. Churn by Internet Service
+Selected relevant features for modeling
 
-   Fiber optic customers churn more compared to DSL and  no-internet users
+🤖 Machine Learning Model
 
-4. Average Monthly Charges vs Churn
+Algorithm Used: Random Forest Classifier
 
-   Churned customers pay higher average monthly charges
+Reason: Handles non-linearity, robust to overfitting, performs well on mixed data
 
-   Indicates pricing impact on churn behavior
+Evaluation Metric: Accuracy
 
-# 🔍 Key Insights
+✅ Model Accuracy
+Accuracy: ~79.7%
 
-   Month-to-month contracts are high risk
+🌐 Web Application (Flask)
 
-   New and short-tenure customers churn more
+Interactive dashboard for churn prediction
 
-   Higher monthly charges increase churn probability
+User inputs customer details
 
-   Fiber optic service users show higher dissatisfaction
+Predicts whether customer will churn or not
 
-#💡 Business Recommendations
+Clean UI with telecom provider selection (Jio, Airtel, VI, BSNL)
 
-   Encourage long-term contracts through offers
+📊 Power BI Dashboard Highlights
+🔹 KPIs
 
-   Provide discounts to new customers
+Total Customers: 7,043
 
-   Improve fiber optic service quality
+Churned Customers: 1,869
 
-   Promote auto-payment options to increase retention
+Average Monthly Charges: 64.76
+
+🔹 Key Insights
+
+Month-to-month contracts have highest churn
+
+Short-tenure customers churn more
+
+Higher monthly charges increase churn probability
+
+Fiber optic customers show higher churn
+
+💡 Business Recommendations
+
+Encourage long-term contracts with offers
+
+Provide discounts to new customers
+
+Improve fiber optic service quality
+
+Promote auto-payment options
+
+▶️ How to Run the Project
+1️⃣ Clone the repository
+git clone https://github.com/your-username/Telco_Customer_Churn_Project.git
+cd Telco_Customer_Churn_Project
+
+2️⃣ Create virtual environment & install dependencies
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+
+3️⃣ Train the model
+python main.py
+
+4️⃣ Run Flask app
+python app.py
+
+
+Open browser:
+
+http://127.0.0.1:5000/
+
+📌 Future Enhancements
+
+Add XGBoost model
+
+Improve feature selection
+
+Add confidence score in predictions
+
+Deploy on cloud (AWS / Render / Heroku)
 
 # 📌 Conclusion
 
