@@ -73,6 +73,7 @@ PyCharm
 Git & GitHub
 
 📁 Project Structure
+
 Telco_Customer_Churn_Project/
 │
 ├── main.py
@@ -103,6 +104,7 @@ Telco_Customer_Churn_Project/
 └── README.md
 
 🔄 Project Workflow
+
 Data Loading
    ↓
 Missing Value Handling
